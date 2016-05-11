@@ -6,11 +6,11 @@ angular.module('mmdubs', [
 ]).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.when('/hc/en-us', {
-    templateUrl: 'https://cmillsla.github.io/zendesk-test/views/home.html',
+    templateUrl: '//p6.zdassets.com/hc/theme_assets/928510/200215297/home.html',
     controller: 'global'
   });
   $routeProvider.when('/hc/en-us/about', {
-    templateUrl: 'https://cmillsla.github.io/zendesk-test/views/about.html',
+    templateUrl: '//p6.zdassets.com/hc/theme_assets/928510/200215297/about.html',
     controller: 'global'
   });
   $routeProvider.otherwise({redirectTo: '/'});
