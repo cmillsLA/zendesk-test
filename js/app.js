@@ -1,30 +1,17 @@
 'use strict';
 
-angular.module('portfolio', [
+angular.module('mmdubs', [
   'ngRoute',
-  'portfolio.global',
-  'portfolio.home',
-  'portfolio.work',
-  'portfolio.experience',
-  'portfolio.contact',
-  'portfolio.version'
+  'mmdubs.global'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'views/home/index.html',
-    controller: 'home'
+    templateUrl: 'views/home.html',
+    controller: 'global'
   });
-  $routeProvider.when('/work', {
-    templateUrl: 'views/work/index.html',
-    controller: 'work'
-  });
-  $routeProvider.when('/experience', {
-    templateUrl: 'views/experience/index.html',
-    controller: 'experience'
-  });
-  $routeProvider.when('/contact', {
-    templateUrl: 'views/contact/index.html',
-    controller: 'contact'
+  $routeProvider.when('/about', {
+    templateUrl: 'views/about.html',
+    controller: 'global'
   });
   $routeProvider.otherwise({redirectTo: '/'});
 }]);

@@ -2,41 +2,28 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="portfolio" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="portfolio" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="portfolio" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="portfolio" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chris Mills | Application UI Developer | Front End Web Developer in Los Angeles</title>
+  <title>Zendesk Test</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css"/>
-</head>
-<body ng-controller='global'>
 
-  <div class="logo"><a href="/">Chris Mills</a></div>
+</head>
+<body>
 
   <nav>
-    <span class="trigger">&#9776;</span>
-    <div>
-      <a href="#/work">Work</a>
-      <a href="#/experience">Experience</a>
-      <a href="#/contact">Contact</a>
-    </div>
+    <a href="#/home">About</a>
+    <a href="#/about">About</a>
   </nav>
 
-  <div ng-view class="view"><div class="loader"></div></div>
+  <div ng-view ng-app="mmdubs" ></div>
 
-  <script src="js/lib/angular/angular.min.js"></script>
-  <script src="js/lib/angular-route/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
   <script src="js/app.js"></script>
   <script src="controllers/global.js"></script>
-  <script src="controllers/home/home.js"></script>
-  <script src="controllers/experience/experience.js"></script>
-  <script src="controllers/work/work.js"></script>
-  <script src="controllers/contact/contact.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
 
 </body>
 </html>
