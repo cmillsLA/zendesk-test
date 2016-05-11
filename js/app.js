@@ -4,7 +4,7 @@ angular.module('mmdubs', [
   'ngRoute',
   'mmdubs.global'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     templateUrl: 'views/home.html',
     controller: 'global'
@@ -14,4 +14,5 @@ config(['$routeProvider', function($routeProvider) {
     controller: 'global'
   });
   $routeProvider.otherwise({redirectTo: '/'});
+  $locationProvider.html5Mode(true);
 }]);
