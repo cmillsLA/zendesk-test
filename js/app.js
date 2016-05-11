@@ -5,11 +5,11 @@ angular.module('mmdubs', [
   'mmdubs.global'
 ]).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-  $routeProvider.when('/', {
+  $routeProvider.when('/hc/en-us', {
     templateUrl: 'views/home.html',
     controller: 'global'
   });
-  $routeProvider.when('/about', {
+  $routeProvider.when('/hc/en-us/about', {
     templateUrl: 'views/about.html',
     controller: 'global'
   });
